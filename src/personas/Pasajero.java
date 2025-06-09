@@ -10,4 +10,12 @@ public class Pasajero extends Persona{
         this.telefono = telefono;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
+
+    @Override
+    public String toString() {
+        return nombre + " | Cédula: " + cedula + " | Edad: " + edad + " | Teléfono: " + telefono;
+    }
 }

@@ -1,4 +1,4 @@
-package Tickets;
+package tickets;
 
 import personas.Pasajero;
 import rutas.Ruta;
@@ -23,8 +23,7 @@ public class TicketNormal extends Ticket {
 
     @Override
     public void mostrarDetalles() {
-        System.out.println("----- TICKET ------");
-        System.out.println("Tipo: Normal");
+        System.out.println("----- TICKET NORMAL ------");
         System.out.println("Pasajero: " + pasajero);
         System.out.println("Ruta: " + ruta);
         System.out.println("Asiento: " + asiento);

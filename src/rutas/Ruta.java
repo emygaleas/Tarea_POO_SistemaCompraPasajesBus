@@ -14,4 +14,9 @@ public class Ruta {
     public double getPrecioBase() {
         return precioBase;
     }
+
+    @Override
+    public String toString() {
+        return origen + " - " + destino + " ($" + precioBase + ")";
+    }
 }
