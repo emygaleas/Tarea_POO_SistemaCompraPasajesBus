@@ -11,4 +11,15 @@ public abstract class Persona {
         this.edad = edad;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 }

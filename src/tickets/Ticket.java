@@ -18,4 +18,5 @@ public abstract class Ticket {
     public abstract double calcularCosto();
 
     public abstract void mostrarDetalles();
+
 }

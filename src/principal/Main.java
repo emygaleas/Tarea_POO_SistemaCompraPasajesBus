@@ -20,6 +20,29 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         inicializarDatos();
 
+        // crear objetos con valores nulos
+        Pasajero pasajero1 = new Pasajero(null, null,0,null);
+        Pasajero pasajero2 = new Pasajero(null, null,0,null);
+        Ruta ruta0 = new Ruta(null, null,0.0);
+        TicketNormal ticket1 = new TicketNormal(pasajero2,ruta0,"","",false);
+        TicketVIP ticket2 = new TicketVIP(pasajero1,ruta0,"","",false,new Servicio[0]);
+
+        //mostrar valores nulos
+        System.out.println(pasajero1);
+        System.out.println(pasajero2);
+        System.out.println(ruta0);
+        System.out.println(ticket1);
+        System.out.println(ticket2);
+
+        //setear algunos valores
+        pasajero1.setNombre("Juan Pérez");
+        pasajero1.setCedula("111222333");
+        pasajero1.setTelefono("0999555444");
+
+        //mostrar valores seteados
+        System.out.println(pasajero1);
+
+        // menu para el sistema
         int opcion;
         do {
             System.out.println("\n=== SISTEMA 'EL BÚHO' ===");
@@ -124,5 +147,4 @@ public class Main {
             System.out.println("------------------------");
         }
     }
-
 }
